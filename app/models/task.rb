@@ -11,6 +11,7 @@
 #  updated_at  :datetime         not null
 #
 class Task < ApplicationRecord
+  
   belongs_to :category
 
   validates :name, :description, presence: true ### Validamos que estos datos no se dejen en blanco

@@ -26,6 +26,8 @@ gem 'hamlit'
 
 gem 'simple_form'
 
+gem 'devise'
+
 
 
 # Use Active Storage variant

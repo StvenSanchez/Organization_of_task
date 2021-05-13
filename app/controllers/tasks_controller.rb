@@ -1,4 +1,5 @@
 class TasksController < ApplicationController
+  # before_action :authenticate_user! ## Helper que verifica si hay una sesion activa, si no hay redirige al login 
   before_action :set_task, only: %i[ show edit update destroy ]
 
   # GET /tasks or /tasks.json
