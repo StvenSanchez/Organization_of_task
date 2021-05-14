@@ -13,6 +13,8 @@
 class Task < ApplicationRecord
   
   belongs_to :category
+  belongs_to :owner, class_name: 'User'
+
 
   validates :name, :description, presence: true ### Validamos que estos datos no se dejen en blanco
   validates :name, uniqueness: { case_sensitive: false } ## Validamos que no se repita el nombre 
